@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+for (m = 0; m < 1000; m++) {
+
+
+    const rand = (max,min) => {
+return Math.round(Math.random() * (max - min) + min);}
+
+let arr = [];
+let random = rand(1, 38);
+
+for(i=1;i<=6;i++){
+arr.push(random)
+while(arr.includes(random)){
+random = rand(1,38)}
+}
+
+document.write(`A區${arr}`);
+document.write("<br>");
+document.write(`B區${rand(1, 8)}`);
+
+
+        for (k = 0; k < 6; k++) {            
+                for (l = 0; l < k; l++) {
+                    if(arr[k]==arr[l]){
+                        // A[k] = Math.ceil(38 * Math.random())
+                        document.write(`失敗`)
+                        break
+                    }
+                    else{
+                        document.write(`a`)
+                        
+                    }
+                    
+                }}
+
+
+                
+
+
+        
+
+        
+
+            }
+    </script>
+</body>
+</html>
